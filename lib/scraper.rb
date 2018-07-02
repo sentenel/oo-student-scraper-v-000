@@ -15,7 +15,6 @@ class Scraper
         }
       end
     end
-
   end
 
   def self.scrape_profile_page(profile_url)
@@ -39,5 +38,4 @@ class Scraper
       student_hash[:bio] = doc.css(".bio-content p").text
     end
   end
-
 end
